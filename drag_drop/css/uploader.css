@@ -1,0 +1,93 @@
+body{
+	font-family: 'Source Sans Pro';
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-weight: 400;
+}
+
+.hidden{
+	display: none;
+}
+
+.uploader{
+	background: #fefefe;
+	border: 2px solid #eee;
+	padding: 20px;
+}
+
+.upload_head{
+	padding: 0 0 20px 0;
+	margin: 0;
+	border-bottom: 2px solid #eee;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.droppable_area{
+	height: 200px;
+	border: 2px dashed #ccc;
+	line-height: 200px;
+	color: #ccc;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.droppable_area.drop{
+	border-color: #222;
+	color: #222;
+}
+
+.upload_body{
+	margin-bottom: 20px;
+}
+
+.progress_bar{
+	width: 100%;
+	background: #eee;
+	padding: 3px;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.fill{
+	height: 30px;
+	display: block;
+	background: cornflowerblue;
+	width: 0;
+	border-radius: 3px;
+	-webkit-transition:width 0.8s ease;
+	transition:width 0.8s ease;
+}
+
+.fill_text{
+	color: #fff;
+	line-height: 30px;
+	margin-left: 5px;
+}
+
+.upload_upload{
+	border-bottom:2px solid #ccc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.upload_upload span{
+	float: right;
+}
+
+.error_Area{
+	color: red;
+}

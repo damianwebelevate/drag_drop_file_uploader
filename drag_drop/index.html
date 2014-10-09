@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>File Uploader</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" />
+        <link rel="stylesheet" href="css/uploader.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="uploader">
+                <h2 class="upload_head">Uploader</h2>
+                <div class="upload_body">
+                    <h3>Select files to upload</h3>
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <input type="file" name="files[]" id="file_upload_normal" multiple/>
+                        <input type="submit" value="Upload Files" id="normal_upload_submit" />
+                    </form>
+                    <h3>Or Drag and Drop below</h3>
+                    <div class="droppable_area" id="dropArea">
+                        Drag and Drop Here
+                    </div>
+                    <div class="progress_bar">
+                        <div  class="fill" id="fill">
+                            <div class="fill_text" id="fill_text">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- dynamically create divs and results using javascript below -->
+                        <div id="hidden" class="hidden">
+                            <h3>User Report</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script src="js/ajax_upload.js"></script>
+        <script src="js/upload_function.js"></script>
+    </body>
+</html>
